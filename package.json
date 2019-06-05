@@ -18,6 +18,7 @@
     "should": "^9.0.2"
   },
   "dependencies": {
+    "cluster": "^0.7.7",
     "express": "^4.14.0",
     "throng": "^4.0.0"
   }

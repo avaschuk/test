@@ -10,17 +10,18 @@ describe("Performance Test", function() {
 
     it("performance testing /heaving-ping", function(done) {
         this.timeout(1000 * 60);
-        var options = {
-            "url": 'http://localhost:8080/heavy-ping',
+        const options = {
+            // "url": 'http://192.168.0.149:8080/heavy-ping',
+            "url": 'http://192.168.0.163:8080/heavy-ping',
             "maxSeconds": maxSeconds,
             "concurrency": concurrency,
             "statusCallback": statusCallback
         };
-        var gLatency;
+        let gLatency;
         function statusCallback(latency, result, error) {
             gLatency = latency;
         }
-        var operation = loadtest.loadTest(options, function(error) {
+        const operation = loadtest.loadTest(options, function(error) {
             if (error) {
                 console.error('Got an error: %s', error);
             } else if (operation.running == false) {
