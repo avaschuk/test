@@ -1,0 +1,24 @@
+{
+  "name": "simple-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon -i \"*.test.js\" server.js",
+    "test": "node_modules/.bin/mocha --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "loadtest": "^1.4.3",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.19.1",
+    "should": "^9.0.2"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "throng": "^4.0.0"
+  }
+}
