@@ -1,5 +1,5 @@
 const cluster = require('cluster');
-const { worker } = require('constants');
+const worker = 8;
 
 
 cluster.setupMaster({
