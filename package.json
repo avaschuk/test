@@ -13,7 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "loadtest": "^1.4.3",
-    "mocha": "^2.5.3",
+    "mocha": "^6.2.1",
     "nodemon": "^1.19.1",
     "should": "^9.0.2"
   },
